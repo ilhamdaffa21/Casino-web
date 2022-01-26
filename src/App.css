@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+body{
+  background-color: #25383C ;
+}
+.title{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 13px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkcontainer{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.link::after{
+  content: '';
+  position: absolute; 
+  width: 100%;
+  height: 0.175rem;
+  background: #ea0e4b;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after{
+  transform: scale(1, 1);
+}
+
+.link{
+  position: relative;
+  padding: 20px;
+  font-family: 'Staatliches', cursive;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buttoncontainer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  display: flex;
+  float: right;
+}
+
+.buttonin{
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  font-family: 'Staatliches', cursive;
+  border: none;
+  outline: none; 
+}
+
+.buttonup{
+  padding: 10px;
+  font-size: 20px;
+  background-color: blue;
+  font-family: 'Staatliches', cursive;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.langbutton{
+  padding-top: 17px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-family: 'Staatliches', cursive;
+}
+
+.interactable{
+  display: flex;
+}
+
+.home-img{
+  display: flex;
+  width: 100%;
+}
+
+.content{
+  color: white;
+  padding: 20px;
+}
+
+.matchesimg{
+  display: flex;
+  height: 150px;
+  color: white;
+  padding: 10px;
+}
+
+.text{
+  padding-top: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
